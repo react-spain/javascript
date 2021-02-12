@@ -1,7 +1,7 @@
 # Mis Notas Javascript
 Notas de Clases de Javascript
 
-# HTML Minimo
+# HTML Mínimo
  ```
 <!DOCTYPE html>
 <html lang="es">
