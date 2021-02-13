@@ -399,3 +399,15 @@ var b = new Number("20");
 console.log( b );
 console.log( b.valueOf() );
 ```
+
+# Fechas
+```
+var hoy = new Date();
+console.log(hoy);
+
+var fMili = new Date(0);
+console.log(fMili);
+
+var fFija = new Date(1980,06,20);
+console.log(fFija);
+```
