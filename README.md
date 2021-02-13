@@ -1,6 +1,29 @@
 # Mis Notas Javascript
 Notas de Clases de Javascript
 
+# Tipos de datos o variables en Javascript
+ ```
+// Tipos primitivos
+var num = 10
+var str = "texto";
+var bol = true;
+var und = undefined;
+var mynull = null;
+console.log( num )
+
+// Objetos
+var obj = {
+    numero: 10,
+    texto: "Nuevo Texto",
+
+    objHijo: {
+        numero2: 20,
+        text2: "Nuevo texto 2"
+    }
+};
+ ```
+
+
 # HTML Mínimo
  ```
 <!DOCTYPE html>
