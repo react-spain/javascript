@@ -351,3 +351,17 @@ console.log(arr[1].nombre);
 arr[3]();
 arr[4](arr[1]);
 ```
+
+# Validacion de Argumentos en una Funcion
+```
+function miFuncion(a,b){
+    if(arguments.length !== 4 )
+    {
+        console.error("Los parametros tienen que ser 4");
+        return;
+    }
+    console.log( arguments );
+    console.log (a+b);
+}
+miFuncion(10,20);
+```
