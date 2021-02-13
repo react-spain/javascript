@@ -1,6 +1,10 @@
 # Mis Notas Javascript
 Notas de Clases de Javascript
 
+# Notas
+- Las funciones son objetos
+- si nombras las funciones haslo de esta forma: estoEsUnaFuncion
+
 # HTML Mínimo
  ```
 <!DOCTYPE html>
