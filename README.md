@@ -411,4 +411,11 @@ console.log(fMili);
 var fFija = new Date(1980,06,20);
 console.log(fFija);
 // Sun Jul 20 1980 00:00:00 GMT+0200
+
+// 2022
+console.log( hoy.getFullYear() + 1 );
+// 13
+console.log( hoy.getDay() );
+// 12
+console.log( hoy.getHours() );
 ```
