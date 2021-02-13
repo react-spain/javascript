@@ -133,3 +133,24 @@ console.log( esMayor05() );
 persona.imprimirNombre();
 persona.direccion.obtenerPais();
  ```
+ 
+  # Objetos con New
+ ```
+ 
+ // var carlos = new Persona();
+function Persona(nombre){
+    this.nombre = nombre;
+    this.apellido = "Mendoza";
+    this.edad = 32;
+
+    this.nombreCompleto = function(){
+        return this.nombre + " " + this.apellido;
+    }
+}
+
+
+var juan = new Persona("Juan");
+console.log( juan );
+console.log( juan.nombre );
+console.log( juan.nombreCompleto() );
+ ```
