@@ -3,7 +3,7 @@ Notas de Clases de Javascript
 
 # Notas
 - Las funciones son objetos
-- si nombras las funciones haslo de esta forma: estoEsUnaFuncion
+- Si nombras las funciones haslo de esta forma: "estoEsUnaFuncion" se letra de caja camello (estilizado como CamelCase)
 
 # HTML Mínimo
  ```
