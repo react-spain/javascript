@@ -137,7 +137,7 @@ persona.direccion.obtenerPais();
   # Objetos con New
  ```
  
- // var carlos = new Persona();
+ // Inicia con Mayúscula para definir que es una funcion de primera clase.
 function Persona(nombre){
     this.nombre = nombre;
     this.apellido = "Mendoza";
