@@ -106,3 +106,30 @@ function esMayor05(){
 
 console.log( esMayor05() );
  ```
+ 
+ # Objetos
+ ```
+ 
+ var persona = {
+    nombre: "Maria",
+    apellido: "Demo",
+    imprimirNombre: function(){
+        console.log( this.nombre );
+    },
+    direccion:{
+        pais: "Costa Rica",
+        obtenerPais: function(){
+            console.log( this.pais );
+            var self = this;
+            var nuevaDireccion = function(){
+                console.log( self );
+                console.log( self.pais );
+            }
+            nuevaDireccion();
+        }
+    }
+};
+
+persona.imprimirNombre();
+persona.direccion.obtenerPais();
+ ```
