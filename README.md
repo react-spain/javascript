@@ -352,7 +352,7 @@ arr[3]();
 arr[4](arr[1]);
 ```
 
-# Validacion de Argumentos en una Funcion
+# Validacion de Argumentos en una Función
 ```
 function miFuncion(a,b){
     if(arguments.length !== 4 )
