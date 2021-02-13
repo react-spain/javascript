@@ -439,3 +439,22 @@ var duraccion = fin.getTime() - inicio.getTime();
 console.log("Duracion milisegundos:" , duraccion);
 console.log("Duracion Segundos:" , duraccion/1000);
 ```
+
+# Creando prototipos para sumar fechas
+```
+var fecha = new Date(2016,9,20);
+
+// Sumar Días
+Date.prototype.sumarDias = function(dias){
+    this.setDate(this.getDate() + dias);
+    return this;
+}
+Date.prototype.sumarAnios = function(anios){
+    this.setFullYear(this.getFullYear() + anios);
+    return this;
+}
+
+console.log(fecha);
+console.log(fecha.sumarDias(5));
+console.log(fecha.sumarAnios(5));
+```
