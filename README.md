@@ -365,3 +365,19 @@ function miFuncion(a,b){
 }
 miFuncion(10,20);
 ```
+
+# Funciones que llaman a Funciones
+```
+function crearProductos(nombre, precio){
+    nombre = nombre || "sin Nombre";
+    precio = precio || 0;
+    console.log ("Producto ", nombre, "Precio ", precio);
+}
+
+function crearProductos100(nombre){
+    crearProductos(nombre,100)
+}
+
+crearProductos("Lapiz");
+crearProductos100("Corrector");
+```
