@@ -419,3 +419,23 @@ console.log( hoy.getDay() );
 // 12
 console.log( hoy.getHours() );
 ```
+```
+var hoy = new Date();
+console.log(hoy);
+
+var fMili = new Date(0);
+var inicio = new Date();
+
+for (var i=0; i< 5000; i++){
+    console.log("Algo");
+}
+
+var fin = new Date();
+
+// console.log( inicio );
+// console.log( fin );
+
+var duraccion = fin.getTime() - inicio.getTime();
+console.log("Duracion milisegundos:" , duraccion);
+console.log("Duracion Segundos:" , duraccion/1000);
+```
