@@ -381,3 +381,21 @@ function crearProductos100(nombre){
 crearProductos("Lapiz");
 crearProductos100("Corrector");
 ```
+
+# Number
+```
+// Number
+var a = 10.21212121;
+console.log( a.toFixed(4) );
+console.log( a.toString());
+console.log( a.toPrecision(4));
+
+a = 10;
+a *= 2
+
+console.log( a );
+
+var b = new Number("20");
+console.log( b );
+console.log( b.valueOf() );
+```
