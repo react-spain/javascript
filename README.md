@@ -214,4 +214,15 @@ Persona.prototype.imprimirInfo = function(){
 var fer = new Persona();
 var a = "Fernando"
  ```
+ 
+ # Prototipo Numero ampliar
+```
+ Number.prototype.esPositivo = function(){
+    if(this > 0){
+        return true;
+    }else{
+        return false;
+    }
+ ```
+}
 
