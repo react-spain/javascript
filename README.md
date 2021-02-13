@@ -272,3 +272,55 @@ var juan = new Persona
 
 identifica(function(){ console.log("soy anonima"); });
  ```
+ 
+# Arreglo
+```
+var arr1 = new Array();
+var arr = [5,4,3,2,1];
+console.log(arr);
+
+// Invertir Arreglo
+arr.reverse();
+console.log(arr);
+
+// Map de un array
+arr = arr.map( function(elem){
+    elem *= elem;
+    return elem;
+});
+console.log(arr);
+
+// Raiz cuadrada de array
+arr = arr.map( Math.sqrt )
+console.log(arr);
+
+// Toma el arreglo y lo pega
+arr = arr.join(".");
+console.log(arr);
+
+// Pasa a Arreglo
+arr = arr.split(".");
+console.log(arr);
+
+// Agregando un arreglo al Final
+arr.push("6")
+console.log(arr);
+
+// Agregando un arreglo al Inicio
+arr.unshift("0");
+console.log(arr);
+
+console.log(arr.toLocaleString());
+
+// Eliminar ultimo elemento con POP
+var elimine = arr.pop();
+console.log(arr, elimine);
+
+// Ve a la posision 1 y elimima 1 y agrega 10
+arr.splice( 1, 1, "10" );
+console.log(arr);
+
+// Cortar el arreglo
+arr = arr.slice(0,2);
+console.log(arr);
+```
