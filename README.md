@@ -225,4 +225,16 @@ var a = "Fernando"
     }
 }
  ```
+ 
+# Funciones Anónimas
+  ```
+ (function(){
+    var a = 10;
+    console.log(a);
+    function cambiarA(){
+        a = 20;
+    }
+    console.info( a );
+})();
+ ```
 
