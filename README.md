@@ -493,3 +493,35 @@ console.log( Math.sqrt(16));
 // Potencia 7 a la 2
 console.log(Math.pow(7,2))
 ```
+# Expresiones Regulares
+```
+// var reg1 = RegExp("a");
+// Busca una H Mayuscula en la primera
+var reg1 = /^H/;
+
+// Busca una o al final
+var reg1 = /o$/;
+
+// Quiero los 3 primero caracteres
+var reg1 = /.../;
+
+// Que tenda despues una o
+var reg1 = /.o/;
+
+var reg1 = /[0-9]/;
+
+// Busca la primera mini
+var reg1 = /[a-z]/;
+
+// Al principio una H despues cualquier letra
+var reg1 = /^H[a-z]/;
+
+// Cualquier vocal que termine un una consonante
+var reg1 = /[aeiou].$/;
+
+
+var texto = "Hola Mundo";
+var arr = texto.match( reg1 );
+console.log(arr);
+// ["a", index: 3, input: "Hola Mundo", groups: undefined]
+```
