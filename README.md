@@ -252,4 +252,23 @@ ejecutarFuncion( function(){
 })
 );
  ```
+ 
+ # typeof
+  ```
+ function identifica( param ){
+    if ( typeof param == "function"){
+        param();
+    }else{
+        console.log( param );
+    }
+}
 
+function Persona(){
+    this.nombre = "Fernando";
+    this.edad = 30;
+}
+
+var juan = new Persona
+
+identifica(function(){ console.log("soy anonima"); });
+ ```
