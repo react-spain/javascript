@@ -71,3 +71,15 @@ console.info( a );
     }
 }
  ```
+ 
+ 
+# Funciones
+ ```
+ function imprimir( nombre,apellido ){
+    // Si esta definidio el apellido es apellido sino BBB
+    apellido = apellido || "BBB"
+    console.log( nombre + " " + apellido );
+}
+
+imprimir( "Juan");
+ ```
