@@ -155,7 +155,7 @@ console.log( juan.nombre );
 console.log( juan.nombreCompleto() );
  ```
 
- # Juego Demo 1
+# Juego Demo 1
  ```
 function Jugador( nombre ){
     this.nombre = nombre;
@@ -196,3 +196,22 @@ var legola = new Jugador("Legola");
 console.log( gandalF );
 console.log( legola );
  ```
+ 
+# Prototipo
+```
+ function Persona(){
+    this.nombre = "Fernando";
+    this.apellido = "Herrera";
+    this.edad = 30;
+    this.pais = "Costa Rica";
+}
+
+// Persona.prototype.pais = "Costa Rica";
+
+Persona.prototype.imprimirInfo = function(){
+    console.log( this.nombre + " " + this.apellido)
+}
+var fer = new Persona();
+var a = "Fernando"
+ ```
+
