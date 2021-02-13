@@ -324,3 +324,30 @@ console.log(arr);
 arr = arr.slice(0,2);
 console.log(arr);
 ```
+
+ 
+# Arreglo con Funciones Anónimas y Objetos Anónimos
+```
+// bool
+// Objeto Anónimo
+// Funcion Anónima
+var arr = [
+    true,
+    {
+        nombre: "Marlon",
+        apellido: "Falcon"
+    },
+    true,
+    function(){
+        console.log("Estoy aqui")
+    },
+    function(persona){
+        console.log(persona.nombre)
+    }
+];
+console.log(arr[1].nombre);
+
+// LLamada a la funcion anonima de la posicion 2
+arr[3]();
+arr[4](arr[1]);
+```
