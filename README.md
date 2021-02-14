@@ -552,3 +552,19 @@ finally{
     console.info("Final");
 }
 ```
+
+```
+try{
+    throw new Error('Error tipo 1');
+    console.log("Esta parte nunca se ejecuta");
+}
+
+catch(e){
+    console.log(e);
+}
+
+finally{
+    console.info("Final");
+}
+```
+
