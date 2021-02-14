@@ -771,3 +771,20 @@ console.log(objetoDesdeJson)
 console.log(objetoDesdeJson.nombre)
 console.log(objetoDesdeJson.edad)
 ```
+
+# while
+```
+var i = 0;
+
+while( i <=10 ){
+    i++;
+    if ( i === 3 ){
+        continue;
+    }
+
+    if ( i === 5 ){
+        break;
+    }
+    console.log(i);
+}
+```
