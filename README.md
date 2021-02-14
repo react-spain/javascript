@@ -26,6 +26,13 @@ Notas de Clases de Javascript
 </html>
  ```
  
+ # Correr un server http-server
+ ```
+ sudo npm install http-server -g
+ http-server -p 8081
+  ```
+ 
+ 
 # Tipos de datos o variables en Javascript
  ```
 // Tipos primitivos
