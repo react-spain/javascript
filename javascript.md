@@ -864,3 +864,23 @@ for ( var i = 1; i <=5; i++){
 }
 ```
 
+# Ejecutar Funciones en el Tiempo
+```
+// Ejecutar 3 veces una funcion cada 3 segundos
+segundos = 0;
+var intervalo = setInterval(() => {
+    segundos ++;
+
+    console.log("Seg", segundos);
+
+    if (segundos == 3){
+        clearInterval( intervalo );
+    }
+}, 1000);
+
+// Ejecutar 1 ves una funcion pasado 1 segundo
+setTimeout(function(){
+    console.log("Paso un segundo");
+},1000);
+```
+
