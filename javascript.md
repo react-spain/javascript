@@ -814,3 +814,34 @@ for ( var i=0; i < 10; i++){
     console.log(i);
 }
 ```
+
+
+# for in , forEach
+```
+var Persona = function(){
+    this.noombre = "Juan";
+    this.apellido = "Pîon";
+    this.edad = 18;
+}
+
+var juan = new Persona();
+
+Persona.prototype.direccion = "Ada"
+
+for (pro in juan){
+    if ( juan.hasOwnProperty( pro ) );
+        console.log(true);
+    console.log( pro,":" ,juan[pro] );
+}
+
+// Aqui imprime la posión.
+for (num in [1,2,3,4,5,6,7,8,9,10]){
+    console.log ( num );
+}
+
+// Recorremos el areglo.
+[1,2,3,4,5,6,7,8,9,10].forEach(function(val){
+    console.log( val );
+});
+```
+
