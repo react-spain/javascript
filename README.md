@@ -648,3 +648,40 @@ borrarCookies("nombre");
 // var cookies = document.cookie;
 console.log( getCookies("correo") );
 ```
+
+# Bin, call, apply 
+# Funciones Prestadas
+```
+var carro = {
+    color: "blanco",
+    marca: "mazda",
+    imprimir: function(){
+        var salida = this.marca + " - " + this.color;
+        return salida;
+    }
+}
+
+var carro2 = {
+    color: "rojo",
+    marca: "toyota"
+}
+
+console.log( carro.imprimir() );
+
+var logCarro = function(arg1,arg2){
+    console.log("Carro: ", this.imprimir() );
+    console.log("Argumentos",arg1, arg2);
+    console.log('===========')
+}
+
+var loModeloCarro = logCarro.bind( carro );
+loModeloCarro();
+
+// Call permite que el this apunte a la variable correcta
+// Sino apuntara al document
+loModeloCarro.call( carro, "122", "456");
+loModeloCarro.apply( carro, ["122", "456"]);
+
+// Funciones Prestadas
+console.log( carro.imprimir.call( carro2 ) );
+```
