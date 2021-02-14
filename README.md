@@ -749,3 +749,25 @@ switch( mes ){
         console.log("Cualquier Otro mes");
 }
 ```
+
+# json
+```
+// http://json.parser.online.fr/
+var objetoJS = {
+    nombre: "Fernando",
+    edad: 30
+}
+// Imprimimos el Objeto
+console.log("Objeto", objetoJS);
+
+// Convertimos(Parseamos) el objeto a JSON
+var jsonString = JSON.stringify( objetoJS );
+
+console.log(jsonString)
+
+// Convertimos de JSON a un Objeto
+var objetoDesdeJson = JSON.parse( jsonString )
+console.log(objetoDesdeJson)
+console.log(objetoDesdeJson.nombre)
+console.log(objetoDesdeJson.edad)
+```
