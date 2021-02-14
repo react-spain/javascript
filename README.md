@@ -568,3 +568,24 @@ finally{
 }
 ```
 
+```
+try{
+    throw {
+        nombreerror: "Error tipo 1",
+        accion: "Salir corriendo a echarle agua al servidor",
+        codeerror: 1
+    }
+}
+
+catch(e){
+    console.log( e );
+    console.log( e.nombreerror );
+    console.log( e.accion );
+    console.log( e.code );
+}
+
+finally{
+    console.info("Finalmente");
+}
+```
+
