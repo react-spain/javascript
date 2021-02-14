@@ -976,6 +976,21 @@ function validar(){
 }
 ```
 
+# Mensajes
+```
+// Mensaje de confirmacion
+var acepto = confirm("Estas seguro que quieres borrar algo?");
+if(acepto){
+    console.log( "Acepto" );
+}else{
+    console.log( "No Acepto" );
+}
+
+// Mensaje con entrada
+var acepto = prompt("Ingrese su nombre","Nombre");
+console.log( "Nombre:", acepto );
+```
+
 
 
 
