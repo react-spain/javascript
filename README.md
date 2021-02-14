@@ -26,7 +26,7 @@ Notas de Clases de Javascript
 </html>
  ```
  
- # Correr un server http-server
+ # Correr un server http-server local
  ```
  sudo npm install http-server -g
  http-server -p 8081
