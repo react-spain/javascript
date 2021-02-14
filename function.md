@@ -13,3 +13,9 @@ function randomEntre(min,max){
     return Math.floor( Math.random() * (max-min+1) + min);
 }
 ```
+
+# redondear a dos decimales
+
+```
+console.log( Math.round( numero*100  ) /100 );
+```
