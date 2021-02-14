@@ -609,3 +609,42 @@ var cookies = document.cookie;
 console.log( cookies );
 ```
 
+# Funciones
+```
+function crearCookies(nombre, valor){
+    valor = escape(valor);
+    // vence en 1 mes
+    var hoy = new Date();
+    hoy.setMonth( hoy.getMonth() + 1 );
+    document.cookie = nombre +"="+ valor +";expires=" + hoy.toUTCString()+";";
+}
+
+function borrarCookies(nombre){
+    var hoy = new Date();
+    hoy.setMonth( hoy.getMonth() - 1 );
+    document.cookie = nombre +"=x;expires=" + hoy.toUTCString()+";";
+}
+
+
+function getCookies(nombre){
+    var cookies = document.cookie;
+    var cookiesArr = cookies.split("; ");
+    console.log( cookiesArr );
+    for(var i=0; i< cookiesArr.length; i++){
+        var parArr = cookiesArr[i].split("=");
+        cookiesArr[i].parArr;
+        if (parArr[0] == nombre){
+            return unescape( parArr[1] )
+        }
+    }
+    console.log( cookiesArr )
+    return undefined;
+}
+
+crearCookies("nombre","Marlon");
+crearCookies("correo","demo@demo.cl");
+borrarCookies("nombre");
+
+// var cookies = document.cookie;
+console.log( getCookies("correo") );
+```
