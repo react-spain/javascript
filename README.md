@@ -596,3 +596,16 @@ finally{
 }
 ```
 
+# Cookies
+```
+// Ver las cookies en Chrome
+// chrome://settings/cookies/
+
+document.cookie = "nombre=marlon";
+document.cookie = "apellido=herrrea";
+
+var cookies = document.cookie;
+
+console.log( cookies );
+```
+
