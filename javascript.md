@@ -937,6 +937,46 @@ document.onmouseup = function(){
 }
 ```
 
+# onsubmit
+```
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+
+    <form action="" onsubmit="return validar()">
+        <input type="text" id="txtNombre" name="txtNombre">
+        <input type="text" id="txtApellido" name="txtApellido">
+        <button type="submit">Enviar Datos</button>
+    </form>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
+// app.js
+
+function validar(){
+    var nombre = document.getElementById("txtNombre").value;
+    var apellido = document.getElementById("txtApellido").value;
+
+    if (nombre.length < 1){
+        return false;
+    }
+
+    if (apellido.length < 1){
+        return false;
+    }
+
+    return true;
+}
+```
+
+
 
 
 
