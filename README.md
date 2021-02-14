@@ -525,3 +525,30 @@ var arr = texto.match( reg1 );
 console.log(arr);
 // ["a", index: 3, input: "Hola Mundo", groups: undefined]
 ```
+
+# try catch
+```
+try{
+    var a = 100;
+    if ( a===100 ){
+        // Aqui salgo del catch forzando un error.
+        throw 'oh oh';
+    }else{
+        throw 'error';
+    }
+    console.log("El valor de a:",a);
+}
+
+catch(e){
+    if (e === 'oh oh'){
+        console.error("Error de catch 1:", e );
+    }
+    else{
+        console.error("Error de catch 2:", e );
+    }
+}
+
+finally{
+    console.info("Final");
+}
+```
