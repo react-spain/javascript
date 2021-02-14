@@ -884,3 +884,43 @@ setTimeout(function(){
 },1000);
 ```
 
+# Eventos
+```
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    
+    <h1>Hola Mundo</h1>
+    <!-- Click -->
+    <button onclick="evento()">Soy un Boton</button>
+    <!-- Doble Click -->
+    <button ondblclick="evento()">Soy un Boton</button>
+    <!-- Focus -->
+    <input type="text" onfocus="evento()">
+
+    <input type="text" id="objDemo">
+
+    <script src="app.js"></script>
+
+
+</body>
+</html>
+
+// app.js
+function evento(arg){
+    console.log("Me dispare");
+}
+
+var objeto = document.getElementById("objDemo");
+objeto.addEventListener("keypress", evento);
+```
+
+
+
+
